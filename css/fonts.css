@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Aktiv Grotesk Corp';
+    src: url('AktivGroteskCorp-Bold.eot');
+    src: local('AktivGroteskCorp-Bold'),
+        url('../fonts/AktivGroteskCorp-Bold.woff2') format('woff2'),
+        url('../fonts/AktivGroteskCorp-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktiv Grotesk Corp';
+    src: url('AktivGroteskCorp-Light.eot');
+    src: local('AktivGroteskCorp-Light'),
+        url('../fonts/AktivGroteskCorp-Light.woff2') format('woff2'),
+        url('../fonts/AktivGroteskCorp-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aktiv Grotesk Corp';
+    src: url('AktivGroteskCorp-Regular.eot');
+    src: local('AktivGroteskCorp-Regular'),
+        url('../fonts/AktivGroteskCorp-Regular.woff2') format('woff2'),
+        url('../fonts/AktivGroteskCorp-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
