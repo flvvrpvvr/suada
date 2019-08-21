@@ -21,7 +21,6 @@ a, h3 {
 h3, h2 {
   cursor: default;
 }
-
 a:hover {
   text-decoration: none;
 }
@@ -135,7 +134,7 @@ i {
 }
 
 .latest-news {
-  padding: 36px 0;
+  padding: 36px 40px;
   background: #ececec;
   margin-bottom: 150px;
 }
@@ -177,9 +176,7 @@ i {
 }
 
 .reasons h2 {
-  font-size: 40px;
   margin-bottom: 100px;
-  font-weight: 300;
 }
 
 .reasons-text {
@@ -227,7 +224,7 @@ i {
   margin-bottom: 23px;
 }
 
-.reasons-2 .title-text {
+.reasons-2 p {
   color: #ffffff;
   margin-bottom: 79px;
   max-width: 720px;
@@ -264,6 +261,7 @@ i {
 }
 
 .reasons-2-text__item p {
+  color: #665757;
   width: 275px;
 }
 
@@ -280,7 +278,7 @@ i {
   margin-bottom: 23px;
 }
 
-.track-progress .title-text {
+.track-progress p {
   margin-bottom: 144px;
 }
 
@@ -297,7 +295,6 @@ i {
   line-height: 24px;
   width: 195px;
   margin: 0 auto;
-  margin-bottom: 1rem;
 }
 
 .stats .percents {
@@ -306,19 +303,18 @@ i {
   height: 130px;
   margin-bottom: 27px;
 }
-
-.stats .percents h3 {
+.percents > svg {
+  width: 100%;
+  display: block;
+  transform: rotate(90deg) scale(-1, 1);
+}
+.percents-text {
   font-size: 30px;
-  font-weight: bold;
   color: #665757;
-  padding: 55px 37px;
+  font-weight: bold;
 }
 
-.stats .percents-100 h3 {
-  padding: 53px 29px;
-}
-
-.percents.percents-25 {
+/* .percents.percents-25 {
   background: url('../img/percents-25.svg') no-repeat 100% 0%;
 }
 
@@ -332,7 +328,7 @@ i {
 
 .percents.percents-100 {
   background: url('../img/percents-100.svg') no-repeat 100% 0%;
-}
+} */
 
 .advantages {
   padding-bottom: 150px;
@@ -464,6 +460,7 @@ i {
 }
 
 .brands img {
+  height: auto;
   margin-bottom: 100px;
   opacity: 0.3;
   transition: opacity 0.6s ease;
@@ -671,6 +668,35 @@ i {
   margin-right: 20px;
 }
 
+
+
+
+.loading {
+  overflow: hidden;
+  height: 100vh;
+}
+.preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 999;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+      background: #fbfbfb url('../img/loader.gif') no-repeat center center;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.2s, opacity 0.2s linear;
+}
+
+
+
+
+
+
 @media (max-width: 979px) {
   .reasons {
     background: none;
@@ -684,41 +710,63 @@ i {
     height: auto;
   }
 
-  .advantages {
-    background: linear-gradient(to right, #343141 95px, #564f63 100%) 0px 120px no-repeat;
-    padding-top: 200px;
-    padding-bottom: 100px;
-  }
-
   .track-progress {
     margin-bottom: 0;
   }
 
   .reasons-text {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
 
   .reasons-2-text {
     padding-bottom: 50px;
   }
 
-  .reasons-2 {
-    padding-top: 50px;
+  .reasons-2,
+  .track-progress,
+  .paid-plans {
+    padding-top: 80px;
   }
 
   .reviews .video,
-  .latest-news {
+  .paid-plans__item {
     margin-bottom: 50px;
   }
+  /* .latest-news,
+  .track-progress .title-text {
+    margin-bottom: 100px;
+  } */
 }
 
 @media screen and (max-width: 768px) {
+    h2:not(.paid-plans-title):not(.offer-title) {
+      font-size: 2em;
+    margin-bottom: 1.5em!important;
+    }
+    p:not(.user-rewiew-text):not(.latest-news-text) {
+      margin-bottom: 50px!important;
+    }
+    .tumblers {
+      margin-bottom: 3em!important;
+    }
+    .latest-news{
+      margin-bottom: 5em;
+    }
+    .navbar {
+      margin-bottom: 100px;
+    }
+
+  .reasons-text .row,
+  .reasons-2-text .row {
+    height: auto;
+  }
   .offer div {
     text-align: center;
   }
 
   .header {
     background: linear-gradient(45deg, rgb(255, 88, 88) 0%, rgb(248, 87, 166) 70%) center;
+    padding-bottom: 140px;
   }
 
   .latest-news .link-1 {
@@ -729,16 +777,18 @@ i {
     height: auto;
   }
 
+  .advantages {
+    background: linear-gradient(to right, #343141 95px, #564f63 100%) 0px 50px no-repeat;
+    padding-top: 8em;
+    padding-bottom: 1em;
+  }
+
   .nav__item:first-child {
     margin-top: 40px;
   }
 
   .navbar-nav .nav__item {
     margin-bottom: 20px;
-  }
-
-  .navbar {
-    margin-bottom: 80px;
   }
 
   .get-suada .mobiles {
@@ -748,16 +798,21 @@ i {
   .get-suada {
     text-align: center;
   }
+  .user-review {
+    margin-top: 3em;
+    margin-bottom: 1em;
+  }
 }
 
 @media screen and (max-width: 576px) {
-
-  .reasons-text .row,
-  .reasons-2-text .row {
-    height: auto;
+  .brands img {
+    /* width: 4em; */
   }
-
   .copyright {
     width: auto;
   }
+  .btn-outline-light {
+    font-size: 12px;
+    padding: 5px 10px;
+}
 }
