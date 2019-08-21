@@ -65,7 +65,9 @@ i {
   opacity: 0.5;
   transition: .15s ease-in-out;
 }
-
+.navbar-brand {
+  z-index: 3;
+}
 .navbar-brand span {
   margin-left: 15px;
   font-weight: bold;
@@ -84,7 +86,34 @@ i {
   font-weight: bold;
   font-size: 13px;
 }
-
+.toggle-btn {
+  display: none;
+  z-index:10;
+  cursor:pointer;
+}
+  .toggle-btn .bar {
+    width:35px;
+    height:3px;
+    border-radius: 3px;
+    margin:7px auto;
+    background:rgba(255, 255, 255, 0.3);
+    transition:all 0.3s ease-in-out;
+  }
+  .toggle-btn:hover .bar {
+    background:rgba(255, 255, 255, 1);
+  }
+  #toggle:checked + label.toggle-btn .bar:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+    background:rgba(255, 255, 255, 1);
+  }
+  #toggle:checked + label.toggle-btn .bar:nth-child(2) {
+    transform: translateX(50px);
+    opacity: 0;
+}
+#toggle:checked + label.toggle-btn .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    background:rgba(255, 255, 255, 1);
+}
 .nav__item {
   text-transform: uppercase;
   font-weight: bold;
@@ -739,6 +768,30 @@ i {
 }
 
 @media screen and (max-width: 768px) {
+.toggle-btn {
+  display: block;
+}
+  .navbar-nav {
+    padding-top: 20vh;
+background: linear-gradient(45deg, rgb(255, 88, 88) 0%, rgb(248, 87, 166) 70%) center;
+position: fixed;
+left: 0%; top: 0%;
+margin: 0px;
+width: 100%;
+height: 100%;
+transition: all 0.3s ease-in-out;
+opacity:0;
+visibility:hidden;
+z-index: 2;
+  }
+  .navbar-nav .nav__item a {
+    font-size: 23px;
+  }
+
+  #toggle:checked ~ .navbar-nav {
+    opacity:1;
+    visibility:visible;
+  }
     h2:not(.paid-plans-title):not(.offer-title) {
       font-size: 2em;
     margin-bottom: 1.5em!important;
@@ -766,7 +819,7 @@ i {
 
   .header {
     background: linear-gradient(45deg, rgb(255, 88, 88) 0%, rgb(248, 87, 166) 70%) center;
-    padding-bottom: 140px;
+    /* padding-bottom: 150px; */
   }
 
   .latest-news .link-1 {

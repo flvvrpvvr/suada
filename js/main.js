@@ -4,6 +4,9 @@ setTimeout(function() {
       $('body').removeClass('loading');
     }, 2000);
   });
+document.querySelector('#toggle').addEventListener('change', function() {
+       document.querySelector('body').classList.toggle('loading')
+})
 
 var gradient =
   '<defs><linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%" spreadMethod="pad"><stop offset="0%" stop-color="rgb(255, 88, 88)" stop-opacity="1"></stop><stop offset="100%" stop-color="rgb(248, 87, 166)" stop-opacity="1"></stop></defs>';
