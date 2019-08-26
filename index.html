@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
   <script src="https://kit.fontawesome.com/885d86c08d.js"></script>
   <script src="js/wow.min.js"></script>
   <script>
@@ -51,7 +52,7 @@
             <a href="#">Login</a>
           </li>
           <li class="nav__item">
-            <button type="button" class="btn btn-outline-light"><a href="#">Sign in</a></button>
+            <button type="button" class="btn btn-outline-light"><a href="#">Sign up</a></button>
           </li>
         </ul>
       </nav>
@@ -122,27 +123,23 @@
               officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
           </div>
         </div>
-      </div>
-      <div class="container reasons-2-text p-0">
-        <div class="reasons-2-text">
-          <div class="row justify-content-center">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 p-0 d-flex justify-content-center align-self-end">
-              <div class="reasons-2-text__item text-center">
-                <h3>Step 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-              </div>
+        <div class="row reasons-2-tooltips justify-content-center">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-self-end">
+            <div class="reasons-2-tooltip">
+              <h3>Step 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 p-0 d-flex justify-content-center align-self-start">
-              <div class="reasons-2-text__item text-center">
-                <h3>Step 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-              </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-self-start">
+            <div class="reasons-2-tooltip">
+              <h3>Step 2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 p-0 d-flex justify-content-center align-self-center">
-              <div class="reasons-2-text__item text-center">
-                <h3>Step 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-              </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-self-center">
+            <div class="reasons-2-tooltip">
+              <h3>Step 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
             </div>
           </div>
         </div>
@@ -264,80 +261,167 @@
               officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
           </div>
         </div>
-        <div class="row user-reviews">
-          <div class="col-md-12 col-lg-4">
-            <div class="user-review">
-              <div class="user-avatar"></div>
-              <h3>Alexander Vanjuvic</h3>
-              <div class="rating d-flex">
-                <span class="star-checked"></span>
-                <span class="star-checked"></span>
-                <span class="star-checked"></span>
-                <span class="star-checked"></span>
-                <span class="star"></span>
+
+
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                      <div class="container">
+                            <div class="row user-reviews">
+                    <div class="col-md-12 col-lg-4">
+                      <div class="user-review">
+                        <div class="user-avatar"></div>
+                        <h3>Alexander Vanjuvic</h3>
+                        <div class="rating d-flex">
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star"></span>
+                        </div>
+                        <p class="user-rewiew-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                          explicabo...</p>
+                        <a href="">Read more</a>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                      <div class="user-review">
+                        <div class="user-avatar"></div>
+                        <h3>Donald Wilson</h3>
+                        <div class="rating d-flex">
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                        </div>
+                        <div class="rating"></div>
+                        <p class="user-rewiew-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                          explicabo...</p>
+                        <a href="">Read more</a>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                      <div class="user-review">
+                        <div class="user-avatar"></div>
+                        <h3>Alexander Vanjuvic</h3>
+                        <div class="rating d-flex">
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star"></span>
+                        </div>
+                        <div class="rating"></div>
+                        <p class="user-rewiew-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                          explicabo...</p>
+                        <a href="">Read more</a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
               </div>
-              <p class="user-rewiew-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo...</p>
-              <a href="">Read more</a>
+
+              <div class="carousel-item">
+                <div class="container">
+                            <div class="row user-reviews">
+                    <div class="col-md-12 col-lg-4">
+                      <div class="user-review">
+                        <div class="user-avatar"></div>
+                        <h3>Alexander Vanjuvic</h3>
+                        <div class="rating d-flex">
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star"></span>
+                        </div>
+                        <p class="user-rewiew-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                          explicabo...</p>
+                        <a href="">Read more</a>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                      <div class="user-review">
+                        <div class="user-avatar"></div>
+                        <h3>Donald Wilson</h3>
+                        <div class="rating d-flex">
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                        </div>
+                        <div class="rating"></div>
+                        <p class="user-rewiew-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                          explicabo...</p>
+                        <a href="">Read more</a>
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                      <div class="user-review">
+                        <div class="user-avatar"></div>
+                        <h3>Alexander Vanjuvic</h3>
+                        <div class="rating d-flex">
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star-checked"></span>
+                          <span class="star"></span>
+                        </div>
+                        <div class="rating"></div>
+                        <p class="user-rewiew-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                          explicabo...</p>
+                        <a href="">Read more</a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+
             </div>
+            <!-- Controls -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+          </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+          </a>
           </div>
-          <div class="col-md-12 col-lg-4">
-            <div class="user-review">
-              <div class="user-avatar"></div>
-              <h3>Donald Wilson</h3>
-              <div class="rating d-flex">
-                <span class="star-checked"></span>
-                <span class="star-checked"></span>
-                <span class="star-checked"></span>
-                <span class="star-checked"></span>
-                <span class="star-checked"></span>
-              </div>
-              <div class="rating"></div>
-              <p class="user-rewiew-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo...</p>
-              <a href="">Read more</a>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-4">
-            <div class="user-review">
-              <div class="user-avatar"></div>
-              <h3>Alexander Vanjuvic</h3>
-              <div class="rating d-flex">
-                <span class="star-checked"></span>
-                <span class="star-checked"></span>
-                <span class="star-checked"></span>
-                <span class="star-checked"></span>
-                <span class="star"></span>
-              </div>
-              <div class="rating"></div>
-              <p class="user-rewiew-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo...</p>
-              <a href="">Read more</a>
+          <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-12 brands align-items-center">
+              <a href="#" class="brands__item gigaom">
+                <img src="img/gigaom.png" alt="">
+              </a>
+              <a href="#" class="brands__item smashing-magazine">
+                <img src="img/smashing-magazine.png" alt="">
+              </a>
+              <a href="#" class="brands__item tc">
+                <img src="img/tc.png" alt="">
+              </a>
+              <a href="#" class="brands__item mashable">
+                <img src="img/mashable.png" alt="">
+              </a>
+              <a href="#" class="brands__item appstorm">
+                <img src="img/appstorm.png" alt="">
+              </a>
+              <a href="#" class="brands__item gizmodo">
+                <img src="img/gizmodo.png" alt="">
+              </a>
             </div>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-10 col-lg-12 d-flex brands align-items-center">
-            <a href="#" class="brands__item gigaom">
-              <img src="img/gigaom.png" alt="">
-            </a>
-            <a href="#" class="brands__item smashing-magazine">
-              <img src="img/smashing-magazine.png" alt="">
-            </a>
-            <a href="#" class="brands__item tc">
-              <img src="img/tc.png" alt="">
-            </a>
-            <a href="#" class="brands__item mashable">
-              <img src="img/mashable.png" alt="">
-            </a>
-            <a href="#" class="brands__item appstorm">
-              <img src="img/appstorm.png" alt="">
-            </a>
-            <a href="#" class="brands__item gizmodo">
-              <img src="img/gizmodo.png" alt="">
-            </a>
-          </div>
-        </div>
+
       </div>
     </section>
     <section class="paid-plans">
@@ -411,7 +495,7 @@
   <footer class="footer">
     <div class="container">
       <div class="row justify-content-around">
-        <div class="col-3 col-md-4 col-lg-2">
+        <div class="col-4 col-md-4 col-lg-2">
           <h3>Key features</h3>
           <ul class="footer-navigation">
             <li><a href="#">Accessibility</a></li>
@@ -420,7 +504,7 @@
             <li><a href="#">Safety & Security</a></li>
           </ul>
         </div>
-        <div class="col-3 col-md-4 col-lg-2">
+        <div class="col-4 col-md-4 col-lg-2">
           <h3>Support</h3>
           <ul class="footer-navigation">
             <li><a href="#">Documentation</a></li>
@@ -429,7 +513,7 @@
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
-        <div class="col-3 col-md-4 col-lg-2">
+        <div class="col-5 col-md-4 col-lg-2">
           <h3>News & Resources</h3>
           <ul class="footer-navigation">
             <li><a href="#">Latest News</a></li>
@@ -438,7 +522,7 @@
             <li><a href="#">Press Kit</a></li>
           </ul>
         </div>
-        <div class="col-3 col-md-4 col-lg-2">
+        <div class="col-4 col-md-4 col-lg-2">
           <h3>Developers</h3>
           <ul class="footer-navigation">
             <li><a href="#">Suada API</li></a>
