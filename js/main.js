@@ -30,7 +30,7 @@ $(".percents").each(function(i) {
       }
     }
   });
-  var value = $(this).attr("value") / 100;
+  var value = $(this).attr("data-value") / 100;
   circle.svg.insertAdjacentHTML("afterbegin", gradient);
   circle.path.style.strokeLinecap = "round";
   //start on scroll

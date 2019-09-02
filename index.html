@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -52,7 +52,7 @@
             <a href="#">Login</a>
           </li>
           <li class="nav__item">
-            <button type="button" class="btn btn-outline-light"><a href="#">Sign up</a></button>
+            <a class="btn btn-outline-light" href="#">Sign up</a>
           </li>
         </ul>
       </nav>
@@ -158,22 +158,22 @@
         </div>
         <div class="row stats justify-content-center">
           <div class="col-md-6 col-lg-3">
-            <div class="percents" value="25"></div>
+            <div class="percents" data-value="25"></div>
             <h3>Error phone</h3>
             <p>At vero eos et accusamus et iusto odio dignissimos.</p>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="percents" value="50"></div>
+            <div class="percents" data-value="50"></div>
             <h3>Global usage</h3>
             <p>Excepturi sint occaecati cupiditate non provident.</p>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="percents" value="75"></div>
+            <div class="percents" data-value="75"></div>
             <h3>Compatibility</h3>
             <p>Similique sunt in culpa qui officia deserunt.</p>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="percents" value="100"></div>
+            <div class="percents" data-value="100"></div>
             <h3>Customizable</h3>
             <p>At vero eos et accusamus et iusto odio dignissimos.</p>
           </div>
@@ -421,8 +421,6 @@
             </div>
           </div>
         </div>
-
-      </div>
     </section>
     <section class="paid-plans">
       <div class="container">
@@ -525,16 +523,16 @@
         <div class="col-4 col-md-4 col-lg-2">
           <h3>Developers</h3>
           <ul class="footer-navigation">
-            <li><a href="#">Suada API</li></a>
-            <li><a href="#">Tutorials</li></a>
-            <li><a href="#">Dev Forum</li></a>
-            <li><a href="#">Open Source</li></a>
+            <li><a href="#">Suada API</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Dev Forum</a></li>
+            <li><a href="#">Open Source</a></li>
           </ul>
         </div>
         <div class="col-md-6 col-lg-4">
           <h3>Stay in touch with us</h3>
           <form class="searchbar">
-            <input class="search_input" type="text" name="" placeholder="Weekly newsletter">
+            <input class="search_input" type="text" placeholder="Weekly newsletter">
             <a href="#">Subscribe</a>
           </form>
           <span class="social">
